@@ -33,6 +33,7 @@ const Feed = () => {
       const response = await fetch('/api/prompt')
       setLoading(true)
       const data = await response.json()
+      console.log(data);
       setPrompts(data)
       setLoading(false)
     }
